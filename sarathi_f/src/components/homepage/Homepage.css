@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.component{
+    border: #1877f2 solid 3px;
+    padding-top: 0%;
+    position: relative;
+    
+}
+.homepage{
+    border:#1877f2 solid 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+    border-radius: 20px;
+    background:white;
+    position: relative;
+    box-shadow: 0 0 15px 5px grey;
+    z-index: 9;
+    /* background: url('../images/img-2.jpg') center center/cover
+    no-repeat; */
+    font-family: 'Source Sans Pro', sans-serif;
+  
+}
+.homepage > .button{
+
+background-color: #1877f2;
+border:1px solid #1877f2;
+color:  #fff;
+padding:0.5rem;
+border-radius: 5px;
+cursor: pointer;
+
+
+
+
+
+}
