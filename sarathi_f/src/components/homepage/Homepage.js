@@ -1,5 +1,8 @@
 import React from "react"
 import "./Homepage.css"
+import "../landing/Landing";
+import "../landing/landing.css"
+import Landing from "../landing/Landing";
 // import hBar from './component/homepage/hBar'
 
 
@@ -7,15 +10,19 @@ import "./Homepage.css"
 
      return (
          <>
+         <div>
+             <Landing/>
+         </div>
+
          <div className="head">
          {/* <img className='bg' src= {require('../images/img-2.jpg').default}  alt='Back'/>  */}
-         <div className="component">
+         {/* <div className="component">
              <h1>Home</h1>
-         </div>
+         </div> */}
          
          <div className="homepage">
              
-             <h1>Homepage</h1>
+             {/* <h1>Homepage</h1> */}
              <div className="button" onClick={()=>setLoginUser ()}>Logout</div>
          </div>
          </div>

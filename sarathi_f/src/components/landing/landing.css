@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Libre+Baskerville&family=Lobster&display=swap');
+
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgb(123, 187, 98), rgb(255, 202, 103));
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid black; */
+}
+
+
+
+.menu-container{
+    margin-top: 32px;
+    height: 4pc;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.head-nav{
+}
+
+.head-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 65pc;
+}
+
+.head-nav ul li{
+    /* border: 2px solid white; */
+    list-style: none;
+    margin-right: 35px;
+    font-size: 26px;
+    
+}
+
+.head-nav ul li:hover{
+    cursor: pointer;
+    
+}
+
+.head-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.head-nav ul li a:hover{
+    
+    color: #4d79ff;
+    text-decoration: underline #0039e6;
+}
+
+.img{
+    margin-left: 52%;
+    position: absolute;
+    margin-top: 7%;
+}
+
+.text{
+    margin-left: 22px;
+    padding: 0px 18px;
+}
+
+.text-1{
+    display: block;
+    /* border: 2px solid red; */
+    margin-top: 45px;
+    font-size: 42px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px -5px 4px rgb(134, 134, 134);
+}
+
+.text-2{
+    display: flex;
+    margin-top: 45px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    font-size: 26px;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 0px 2px 3px black;
+}
+
+.rapid-btn{
+    margin-top: 3%;
+    margin-left: 8%;
+    font-size: 24px;
+    height: 2.5pc;
+    width: 16%;
+    color: white;
+    background-color: #4d79ff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 2px 4px rgb(0, 0, 0);
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    font-family: 'Crimson Text', serif;
+}
+
+.rapid-btn:hover{
+    cursor: pointer;
+    height: 3pc;
+    border-bottom: 8px solid  #0039e6;
+    transition: all 0.8s ;
+    
+}
+
+.foot-nav{
+    /* border: 2px solid white; */
+    margin-top: 12%;
+}
+
+.foot-nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.foot-nav ul li{
+    /* border: 2px solid red;
+    background-color: white; */
+    font-size: 26px;
+    margin-left: 52px;
+    
+}
+
+.foot-nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+
+.foot-nav ul li a:hover{
+    color: rgb(23, 3, 204);
+    /* text-decoration: underline; */
+    border-bottom: 3px solid rgb(23, 3, 204);
+    
+}
