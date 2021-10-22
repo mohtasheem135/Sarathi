@@ -2,7 +2,12 @@ import React ,{useState} from "react"
 import  "../login/Login.css"
 import axios from "axios"
 import { useHistory } from "react-router"
+import Landing from "../landing/Landing"
  const Login=({setLoginUser})=>{
+     
+     
+   
+     
     const [user,setUser]=useState({
         name:"",
         email:"",
@@ -32,8 +37,11 @@ import { useHistory } from "react-router"
      return (
          <>
          <div className="kar">
+ 
          <div className="login">
+         <button  class="close-btn fas fa-times" title="close" onClick={ ()=> history.push("/")}></button>
             <h1>Login</h1>
+         <input  class="ch" type="checkbox" id="show"></input>
            
 
             <input type="text" name ="email"  value={user.email} placeholder=" Enter Email" onChange={handleChange}></input>

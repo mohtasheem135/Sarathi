@@ -1,15 +1,21 @@
 import React from 'react';
 import "./landing.css"
 import img from "../landing/images/Ambulance.png"
+import Login from '../login/Login'
+import Register from '../register/Register'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 const Landing = () => {
     return (
+        <>
         <div className="main-body">
             <div class="menu-container">
                 <nav class="head-nav">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><button class="btn-1">About</button></li>
+                        <li><button class="btn-1">Services</button></li>
+                        
                     </ul>
                 </nav>
 
@@ -20,14 +26,28 @@ const Landing = () => {
             <span className="text text-1">Sarathi</span>
             <span className="text text-2">Connecting Ambulances Saving Lives</span>
             <button className="rapid-btn">Rapid Booking</button>
+<Router>
+<div>
 
-            <nav class="foot-nav">
+<nav class="foot-nav">
                     <ul>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Log In</a></li>
+                        <li><Link to="/register">Register</Link></li>
+                        <li><Link to="/login">Log In</Link></li>
                     </ul>
-                </nav>
-        </div>
+</nav>
+                <Route path="/register" component={Register} />
+                <Route path="/login" component={Login} />
+                
+</div>
+
+</Router>
+
+            
+ </div>
+ 
+
+ 
+        </>
     )
 }
 

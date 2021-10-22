@@ -1,15 +1,32 @@
-.login{
+.kar{
     
+    
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    position: absolute;
+    width: 100%;
+  
+    z-index: 10;
+
+}
+.fas{
+    margin-left:90%;
+}
+
+
+
+.login{
     width: 400px;
-    padding-left: 400px;
+    margin: 300px 500px;
     border: 1px solid  blue;
     border-radius: 8px;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgb(0 0 0 /  10%),0 8px 16px rgb(0 0 0 /10%);
     align-items:center ;
     padding :1rem;
+    z-index: 15;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .login >input{
@@ -39,3 +56,8 @@ cursor:pointer;
  
 
 }
+
+
+ 
+
+  

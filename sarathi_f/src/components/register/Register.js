@@ -42,9 +42,12 @@ const register = ()=>{
 }
 
      return (
-         <div>
+         <div class="kar">
              <div className="register">
-            <h1>Register</h1>
+             <button  class="close-btn fas fa-times" title="close" onClick={ ()=> history.push("/")}></button>
+
+
+             <h1>Register</h1>
              <input type="text" name ="name"  value={user.name} placeholder=" Your Name" onChange={handleChange}></input>
         
 
@@ -52,8 +55,6 @@ const register = ()=>{
              <input type="password" name="password" value={user.password}  placeholder=" Your Password" onChange={handleChange}></input>
              <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
             
-            
-             
             <div className="button" onClick={register}>Register</div>
             <div> or </div>
             <div className="button" onClick={ ()=>history.push("/login")}>Login</div>
