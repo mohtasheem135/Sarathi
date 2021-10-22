@@ -3,6 +3,7 @@
 import Homepage from './components/homepage/Homepage';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
+import Home from "./components/Home/Home"
 import {useState} from 'react'
 
 import {
@@ -18,7 +19,8 @@ function App() {
   const [user, setLoginUser]= useState({})
   return (
     <div className="App">
-      <Homepage/>
+      {/* <Homepage/> */}
+      <Home/>
       {/* <Router>
 <Switch>
 <Route  exact path="/" >
