@@ -25,10 +25,11 @@ function App() {
 <Router>
 <Switch>
 <Route exact path="/" component={Landing}></Route>
-<Route path="/"  >
+{/* <Route path="/home" component={Home} ></Route> */}
+<Route path="/home"  >
   {
    
-    user && user._id ?<Home setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser}/>
+    user && user._id ?<Home />:<Login setLoginUser={setLoginUser}/>
     // user && user._id ?<Route path="/home" component ={Home}></Route>:<Route path="/login" component = {Login}></Route>
   }
   

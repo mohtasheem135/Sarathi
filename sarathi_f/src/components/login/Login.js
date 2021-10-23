@@ -29,7 +29,8 @@ import Landing from "../landing/Landing"
            console.log(res)
             alert(res.data.message)
             //  setLoginUser(res.data.user)
-            history.push("/")
+            history.push("/home");
+            window.location.reload();
             })
           
         
