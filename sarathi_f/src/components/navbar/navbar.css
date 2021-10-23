@@ -17,7 +17,7 @@
 }
 
 .img-1{
-    width: 14%;
+    width: 12%;
     margin-left: 22px;
     text-shadow: 2px 2px 12px black;
 }
@@ -43,34 +43,135 @@
 .nav-1{
     /* border: 2px solid red; */
     width: 100%;
-    height: 8pc;
+    height: 6pc;
     display: flex;
     align-items: center;
     
 }
 
-.nav-1 ul{
+.nav-list{
     /* border: 2px solid green; */
     display: flex;
     align-items: center;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
-.nav-1 ul li{
+.nav-text{
     /* border: 2px solid rgb(255, 145, 0); */
     list-style: none;
     margin-left: 30px;
     font-size: 22px;
-    
 }
 
-.nav-1 ul li a{
+.nav-link-text{
     text-decoration: none;
     color: white;
+    font-family: 'Crimson Text', serif;
 }
 
-.nav-1 ul li a:hover{
+.nav-link-text:hover{
     font-weight: 540;
     color: rgb(207, 207, 207);
     text-shadow: 4px 3px 6px rgb(8, 8, 8);
+}
+
+.user-container{
+    /* border: 2px solid black; */
+    border: none;
+    border-left: 1px solid rgb(255, 255, 255);
+    width: 22%;
+    height: 5pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.user-link{
+    /* margin-left: 12%; */
+    margin-top: 10px;
+    /* border: 2px solid rgb(255, 8, 8); */
+}
+
+.user-1{
+    width: 35%;
+    /* border: 2px solid black; */
+    margin-left: 30%;
+}
+
+.profile-list{
+    display: inline;
+    /* border: 2px solid orange; */
+    margin-left: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.profile-text{
+    cursor: pointer;
+    list-style: none;
+    font-size: 16px;
+    /* border: 2px solid black; */
+    color: white;
+    margin-left: 12px;
+    text-align: right;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.drop-container{
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* background-color: white; */
+    margin-top: 6pc;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    margin-right: 9%;
+    margin-top: 1.5%;
+    height: 5pc;
+    /* visibility: hidden; */
+    
+}
+
+.drop-list{
+    /* border: 2px solid red; */
+    list-style: none;
+    visibility: hidden;
+    height: 0pc;
+    margin-top: 55%;
+    box-shadow: 0 0 12px black;
+    
+}
+
+.drop-text{
+    
+    /* border: 2px solid black; */
+    font-size: 14px;
+   
+}
+
+.drop-text:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* .profile-list :hover .drop-list{
+    visibility: visible;
+    color: red;
+} */
+
+.drop-container:hover .drop-list{
+    visibility: visible;
+    height: 10pc;
+    
+    transition: all 0.5s ease-out;
+   
+}
+
+.drop-container:hover .drop-text{
+    
+    transition: all 0.5s ease-out;
+    padding: 10px 32px;
 }
