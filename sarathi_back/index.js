@@ -28,6 +28,7 @@ useUnifiedTopology:true
         if(user){
             if(password === user.password ) {
                 res.send({message: "Login Successfull", user: user})
+                
             } else {
                 res.send({ message: "Password didn't match"})
             }
@@ -75,6 +76,6 @@ app.post("/register",(req,res)=>{
 })
 
 
-app.listen(9003,()=>{
-    console.log("BE started at port 9003 ")
+app.listen(9005,()=>{
+    console.log("BE started at port 9005 ")
 })

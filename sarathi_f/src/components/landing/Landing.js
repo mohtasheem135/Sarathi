@@ -31,8 +31,8 @@ const Landing = () => {
 
 <nav class="foot-nav">
                     <ul>
-                        <li><Link to="/register">Register</Link></li>
-                        <li><Link to="/login">Log In</Link></li>
+                    <button className='btn-solid-lg'><Link to="/register" className='btn-solid-lg-col'>Register</Link></button>
+                    <button className='btn-solid-lg'><Link to="/login" className='btn-solid-lg-col'>Login</Link></button>
                     </ul>
 </nav>
                 <Route path="/register" component={Register} />

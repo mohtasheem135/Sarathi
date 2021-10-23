@@ -10,9 +10,7 @@ import Landing from "../landing/Landing";
 
      return (
          <>
-         <div>
-             <Landing/>
-         </div>
+      
 
          <div className="head">
          {/* <img className='bg' src= {require('../images/img-2.jpg').default}  alt='Back'/>  */}

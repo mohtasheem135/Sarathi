@@ -24,11 +24,11 @@ import Landing from "../landing/Landing"
         }
         
         const login = () =>{
-            axios.post("http://localhost:9003/login",user )
+            axios.post("http://localhost:9005/login",user )
             .then(res => {
            console.log(res)
             alert(res.data.message)
-            setLoginUser(res.data.user)
+            //  setLoginUser(res.data.user)
             history.push("/")
             })
           

@@ -93,28 +93,35 @@ body{
     text-shadow: 0px 2px 3px black;
 }
 
+
+
 .rapid-btn{
-    margin-top: 3%;
-    margin-left: 8%;
-    font-size: 24px;
-    height: 2.5pc;
-    width: 16%;
-    color: white;
-    background-color: #4d79ff;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 3px 2px 4px rgb(0, 0, 0);
-    text-shadow: 3px 3px 4px rgb(0, 0, 0);
-    font-family: 'Crimson Text', serif;
+
+  margin-top: 3%;
+  margin-left: 8%;
+  font-size: 24px;
+  height: 3pc;
+  width: 16%;
+  color: white;
+  background-color: #4d79ff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 3px 2px 4px rgb(0, 0, 0);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
 }
 
+
 .rapid-btn:hover{
-    cursor: pointer;
-    height: 3pc;
-    border-bottom: 8px solid  #0039e6;
-    transition: all 0.8s ;
-    
+  
+  cursor: pointer;
+  height: 4pc;
+  background-color: #ec4b22;
+  transition: all 0.2s ;
+  
 }
+
+
 
 .foot-nav{
     /* border: 2px solid white; */
@@ -326,4 +333,31 @@ form .signup-link a{
 }
 form .signup-link a:hover{
   text-decoration: underline;
+
+}
+
+
+.btn-solid-lg {
+	display: inline-block;
+  color: #fff;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #c2337b;
+	border-radius: 32px;
+	background-color: #c2337b;
+	
+	font-weight: 600;
+	font-size: 1.3rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+  margin-left: 4%;
+}
+.btn-solid-lg-col{
+  color:white;
+  text-decoration: none
+}
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #c2337b; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
 }

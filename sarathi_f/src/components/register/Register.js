@@ -28,7 +28,7 @@ const register = ()=>{
     {/* checking if name yani ki kuch enter bhi kiya hai ki nai*/}
     if(name && email && (password==reEnterPassword)){
         //alert("posted")
-        axios.post("http://localhost:9003/register",user)
+        axios.post("http://localhost:9005/register",user)
         .then(res=> {alert (res.data.message)
           history.push("/login")
         
