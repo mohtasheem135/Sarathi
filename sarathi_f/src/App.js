@@ -6,6 +6,7 @@ import Register from './components/register/Register';
 import Home from "./components/Home/Home"
 import {useState} from 'react'
 import Map from './components/Map/Map';
+import Dprofile from './components/Driver-profile/Dprofile'
 
 import {
   BrowserRouter as Router,
@@ -14,7 +15,7 @@ import {
   Link
 } from "react-router-dom";
 import Landing from './components/landing/Landing';
-import Payment from './components/Payment/Payment';
+
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
   const [user, setLoginUser]= useState({})
   return (
     <div className="App">
-       <Map/>
+       <Dprofile/>
       
 {/* <Router>
 <Switch>
@@ -31,7 +32,7 @@ function App() {
 {/* <Route path="/"  >
   {
    
-    user && user._id ?<Home setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser}/>
+    user && user._id ?<Home />:<Login setLoginUser={setLoginUser}/>
     // user && user._id ?<Route path="/home" component ={Home}></Route>:<Route path="/login" component = {Login}></Route>
   }
   

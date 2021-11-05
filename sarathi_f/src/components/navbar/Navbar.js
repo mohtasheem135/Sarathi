@@ -28,7 +28,7 @@ const Navbar = () => {
                         <li className="drop-text">View Profile</li>
                         <li className="drop-text">View Profile</li>
                         <li className="drop-text">View Profile</li>
-                        <li className="drop-text">View Profile</li>
+                        <li className="drop-text"><a className="drop-text-link" href="/" >Log Out</a></li>
                     </ul>
                 </div>
                     </div>
