@@ -3,6 +3,7 @@ import  "../login/Login.css"
 import axios from "axios"
 import { useHistory } from "react-router"
 import Landing from "../landing/Landing"
+
  const Login=({setLoginUser})=>{
      
      
@@ -28,8 +29,9 @@ import Landing from "../landing/Landing"
             .then(res => {
            console.log(res)
             alert(res.data.message)
-            //  setLoginUser(res.data.user)
-            history.push("/")
+            setLoginUser(res.data.user)
+            history.push("/home");
+            window.location.reload();
             })
           
         

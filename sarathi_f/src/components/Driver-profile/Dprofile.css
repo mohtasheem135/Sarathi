@@ -1,0 +1,327 @@
+.logo{
+
+background-image: url('https://as1.ftcdn.net/v2/jpg/02/54/41/98/1000_F_254419807_hRiGLTOqhgEMm7IWSNXeOW0whvSlzjZW.jpg');
+margin: 20px 10px;
+
+}
+.wrapper{
+    display:block;
+  z-index: 10;
+    /* border: solid red 4px; */
+    border-radius: 30px;
+    max-width:800px;
+     height: 60vh;
+     background-color: rgb(255, 255, 255);
+    margin:200px auto;
+}
+.header{
+    display: flex;
+    color: aliceblue;
+    margin-top: 40px;
+}
+.profile-info{
+    border: solid 5px rgb(0, 38, 255); 
+    /* background-color: rgb(255, 255, 255); */
+    margin-left: 500px;
+    display: flex;
+}
+.profile-img{
+    border: solid 3px red;
+}
+.about{
+padding:70px 100px;
+}
+.quick-info{
+    padding-left: 50px;
+}
+.fas{
+   padding: 0 0;
+   margin: 0 10px;
+    color:yellow;
+    font-size: 20px;
+}
+.info h3,h2{
+
+ font-family: 'Poppins';
+ color: #000000;
+}
+.topper{
+    padding-left: 130px;
+}
+.name-rate{
+    display: flex;
+    justify-content: space-around;
+    margin:10px 0px;
+}
+.ratings{
+    display:flex;
+}
+.col-md-6{
+    display: flex;
+    justify-content: space-between;
+
+    margin:30px 50px;
+    
+}
+.tail{
+    font-weight: bolder;
+    padding-left: 50px;
+}
+
+
+.container{
+    z-index: 5;
+    color: aliceblue;
+    margin: 0 0;
+
+}
+
+.info{
+    margin: 0px 30px;
+}
+.label-1{
+    font-size: larger;
+    font-weight: 600;
+   margin-left:10px ;
+    background-color:#fff;
+   color:#000000;
+    
+   
+
+}
+.mytabs{
+    display:flex;
+    flex-wrap:wrap;
+    /* max-width:600px;
+    padding:25px;
+    margin:50px auto; */
+}
+.mytabs .tab{
+    width: 100%;
+    padding: 20px;
+    color: black;
+    background: #fff;
+    order:1;
+    display:none;
+}
+.title{
+    background-color: #17e3f1;
+  
+    border-radius:20px ;
+}
+.detail{
+    display:flex;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: bolder;
+  
+    /* padding: 30px 50px; */
+    margin: 10px 10px;
+}
+.detail-center{
+   
+}
+.detail-row{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 30px;
+    list-style: none;
+}
+.detail-travel{
+
+    border: solid rgb(103, 219, 171) 4px;
+    color:#fff;
+    font-weight: 600;
+    margin: 5px 10px;
+   border-radius: 10px;
+    padding: 10px 170px;
+    background-color: rgb(43, 135, 240); 
+}
+
+.detail-travel:hover{
+
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+
+.buttons {
+    /* margin: 30%; */
+    padding: 5px 50px;
+    text-align: center;
+
+}
+
+.travel-hover {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 18px  40px;
+    padding:10px 10px; 
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.travel-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.travel-hover:focus {
+    outline: none;
+}
+
+.travel-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.mytabs input[type='radio']{
+display: none;
+}
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+  
+   
+}
+
+
+.mytabs input[type="radio"]:checked + label {
+    border-bottom:rgb(0, 132, 255) solid 4px;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow: hidden;
+  padding: 0 20px;
+  background: #17a2b8;
+}
+::selection{
+  background: rgba(23,162,184,0.3);
+} */
+/* .wrapper{
+  max-width: 400px;
+  width: 50%;
+  margin: 0px auto;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper header{
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.nav-bar{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.wrapper nav{
+  position: relative;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.wrapper nav label{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #39bace;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.wrapper nav label:hover{
+  background: rgba(23,162,184,0.3);
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+  #about:checked ~ nav label.about{
+  color: #fff;
+}
+
+nav label i{
+  padding-right: 7px;
+}
+nav .slider{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: #17a2b8;
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#blog:checked ~ nav .slider{
+  left: 20%;
+}
+#code:checked ~ nav .slider{
+  left: 40%;
+}
+#help:checked ~ nav .slider{
+  left: 60%;
+}
+#about:checked ~ nav .slider{
+  left: 80%;
+}
+section .content{
+  display: none;
+  background: #fff;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5{
+  display: block;
+}
+section .content .title{
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+section .content p{
+text-align: justify;
+} */
+

@@ -5,6 +5,7 @@ import Login from './components/login/Login';
 import Register from './components/register/Register';
 import Home from "./components/Home/Home"
 import {useState} from 'react'
+import Map from './components/Map/Map';
 
 import {
   BrowserRouter as Router,
@@ -13,6 +14,7 @@ import {
   Link
 } from "react-router-dom";
 import Landing from './components/landing/Landing';
+import Dprofile from './components/Driver-profile/Dprofile'
 
 
 function App() {
@@ -20,21 +22,22 @@ function App() {
   const [user, setLoginUser]= useState({})
   return (
     <div className="App">
-       {/* <Home/>  */}
+       <Dprofile/>
       
-<Router>
+{/* <Router>
 <Switch>
 <Route exact path="/" component={Landing}></Route>
-<Route path="/"  >
+<Route path="/home"component={Home} ></Route> */}
+{/* <Route path="/"  >
   {
    
     user && user._id ?<Home setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser}/>
     // user && user._id ?<Route path="/home" component ={Home}></Route>:<Route path="/login" component = {Login}></Route>
   }
   
-</Route>
+</Route> */}
 
-<Route  path="/login" >
+{/* <Route  path="/login" >
 
 <Login setLoginUser={setLoginUser }/>
 </Route>
@@ -45,7 +48,7 @@ function App() {
 
 </Switch>
 
-</Router>
+</Router> */}
      {/* < Hero/>  */}
      {/* <Login/>    
      <Homepage/> */}

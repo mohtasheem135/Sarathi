@@ -3,10 +3,15 @@
 
 
 /* Navbar */
+*{
+    font-family: 'Poppins';
 
+}
 .navbar-1{
-    border: 2px solid black;
+    font-family: 'Poppins';
+    border: 4px solid rgb(255, 255, 255);
     width: 100%;
+    box-shadow: 2px 1px 5px #fff;
     /* background-color: darkcyan; */
     background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
     position: fixed;
@@ -23,6 +28,7 @@
 }
 
 .img-link{
+    font-family: 'Poppins';
     position: absolute;
     text-decoration: none;
     
@@ -31,13 +37,15 @@
 }
 
 .heading-2{
+
     margin-left: 9%;
     color: rgb(0, 0, 0);
-    font-family: 'Architects Daughter', cursive;
-    font-size: 55px;
+   
+    font-size: 40px;
+    font-weight: bolder;
     color: white;
-    font-family: 'Crimson Text', serif;
-    font-weight: lighter;
+    font-family: 'Poppins';
+   
 }
 
 .nav-1{
@@ -51,22 +59,27 @@
 
 .nav-list{
     /* border: 2px solid green; */
+    font-family: 'Poppins';
     display: flex;
     align-items: center;
     margin-left: 20%;
 }
 
 .nav-text{
-    /* border: 2px solid rgb(255, 145, 0); */
+    font-family:'Poppins';
+   
     list-style: none;
     margin-left: 30px;
-    font-size: 22px;
+    font-size: 15px;
+    font-weight: 750;
 }
 
 .nav-link-text{
+  
     text-decoration: none;
     color: white;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Poppins';
+    
 }
 
 .nav-link-text:hover{
@@ -110,7 +123,7 @@
 .profile-text{
     cursor: pointer;
     list-style: none;
-    font-size: 16px;
+    font-size: 13px;
     /* border: 2px solid black; */
     color: white;
     margin-left: 12px;
@@ -147,7 +160,18 @@
     
     /* border: 2px solid black; */
     font-size: 14px;
-   
+}
+
+.drop-text-link{
+    text-decoration: none;
+    text-align: right;
+    color: black;
+}
+
+.drop-text-link:hover{
+    text-decoration: none;
+    text-align: right;
+    color: rgb(255, 255, 255);
 }
 
 .drop-text:hover{
