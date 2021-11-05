@@ -1,43 +1,57 @@
 
 
+// import Homepage from './components/homepage/Homepage';
+// import Login from './components/login/Login';
+// import Register from './components/register/Register';
+// import Home from "./components/Home/Home"
+import { useState } from 'react'
 import Homepage from './components/homepage/Homepage';
-import Login from './components/login/Login';
-import Register from './components/register/Register';
-import Home from "./components/Home/Home"
-import {useState} from 'react'
+import Landing from './components/landing/Landing';
 import Map from './components/Map/Map';
+ import Dprofile from './components/Driver-profile/Dprofile'
+ import Login from './components/login/Login';
+ import Register from './components/register/Register';
 
-import {
-  BrowserRouter as Router,
-  Switch,
+ import {
+   BrowserRouter as Router,
+   Switch,
   Route,
   Link
 } from "react-router-dom";
-import Landing from './components/landing/Landing';
-import Dprofile from './components/Driver-profile/Dprofile'
+
 
 
 function App() {
 
-  const [user, setLoginUser]= useState({})
+  const [user, setLoginUser] = useState({})
   return (
     <div className="App">
-       <Dprofile/>
+       {/* <Dprofile/> */}
       
-{/* <Router>
+<Router>
+<Switch>
+<Route exact path="/" component={Landing}></Route>
+<Route path="/map"component={Map} ></Route> 
+<Route path="/dprofile"component={Dprofile} ></Route> 
+
+{/* <Route path="/"  >
+      {/* <Dprofile/> */}
+     
+
+      {/* <Router>
 <Switch>
 <Route exact path="/" component={Landing}></Route>
 <Route path="/home"component={Home} ></Route> */}
-{/* <Route path="/"  >
+      {/* <Route path="/"  >
   {
    
-    user && user._id ?<Home setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser}/>
+    user && user._id ?<Home />:<Login setLoginUser={setLoginUser}/>
     // user && user._id ?<Route path="/home" component ={Home}></Route>:<Route path="/login" component = {Login}></Route>
   }
   
 </Route> */}
 
-{/* <Route  path="/login" >
+<Route  path="/login" >
 
 <Login setLoginUser={setLoginUser }/>
 </Route>
@@ -48,11 +62,11 @@ function App() {
 
 </Switch>
 
-</Router> */}
+</Router>
      {/* < Hero/>  */}
      {/* <Login/>    
      <Homepage/> */}
-      
+
     </div>
   );
 }

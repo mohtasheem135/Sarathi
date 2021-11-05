@@ -29,8 +29,8 @@ import Landing from "../landing/Landing"
             .then(res => {
            console.log(res)
             alert(res.data.message)
-            setLoginUser(res.data.user)
-            history.push("/home");
+            // setLoginUser(res.data.user)
+            history.push("/map");
             window.location.reload();
             })
           
