@@ -11,7 +11,7 @@ const Navbar = () => {
                     <a className="img-link" href="#"> <img className="img-1" src={logo_1} /></a>
                     <h1 className="heading-2">Sarathi</h1>
                     <ul className="nav-list">
-                        <li className="nav-text"><a className="nav-link-text" href="#">Home</a></li>
+                        <li className="nav-text"><a className="nav-link-text" href="/">Home</a></li>
                         <li className="nav-text"><a className="nav-link-text" href="#">Services</a></li>
                         <li className="nav-text"><a className="nav-link-text" href="#">About</a></li>
                         <li className="nav-text"><a className="nav-link-text" href="#">Contact us</a></li>

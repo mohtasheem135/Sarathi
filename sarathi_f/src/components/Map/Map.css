@@ -6,7 +6,7 @@
     border: 2px solid black;
     box-shadow: 2px 4px 4px rgb(105, 105, 105);
     height: 33pc;
-    margin-top: 1%;
+    margin-top: 0.5%;
     position: fixed;
     margin-left: 12px;
     width: 60%;
@@ -400,7 +400,7 @@ border: solid 4px seagreen;
 .payment-btn{
   padding: 5px 8px;
   font-size: 20px;
-  margin-top: -22%;
+  margin-top: -7%;
   margin-left: 65%;
   position: absolute;
   background: none;
@@ -429,7 +429,7 @@ border: solid 4px seagreen;
 .payment-btn-container{
   display: flex;
   flex-direction: column;
-  margin-top: 12%;
+  margin-top: 2%;
   justify-content: center;
   align-items: center;
   
@@ -442,6 +442,7 @@ border: solid 4px seagreen;
  /* border: 2px solid black; */
  background-color: #0080ff;
  color: white;
+ margin-top: 34px;
  width: 90%;
   padding: 10px 23px;
   border-radius: 3px;
@@ -468,11 +469,11 @@ border: solid 4px seagreen;
 
 
 .container-1{
-  height: 107vh;
+  height: 1007vh;
   width: 100%;
   border: 2px solid black;
   background-color: rgba(77, 77, 77, 0.7);
-  
+  z-index: 100;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -486,7 +487,8 @@ border: solid 4px seagreen;
   justify-content: center;
   align-items: center;
   height: 30pc;
-  margin-top: 5%;
+  margin-top: 17%;
+  z-index: 1;
   width: 38%;
   box-shadow: 3px 1px 5px rgb(0, 0, 0);
 }
@@ -506,4 +508,63 @@ border: solid 4px seagreen;
 .Radio-label{
   /* border: 2px solid red; */
   font-size: 22px;
+}
+
+/* #H_marker_1{
+  background-image: url('img/pizza_marker.png');
+  background-size: cover;
+  width: 50px;
+  height: 70px;
+
+} */
+
+/* #H_marker_1{
+  background-image: url('./images/Amb.png');
+  background-size: cover;
+  width: 50px;
+  height: 70px;
+} */
+.H_marker_1{
+  background-image: url('./images/Amb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 70px;
+}
+
+
+.marker_2{
+  background-image: url('./images/Hospital.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.driver_name_distance{
+  font-size: 18px;
+  /* border: 2px solid black;  */
+  background: none;
+  outline: none;
+  border: none;
+  height: 4pc;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 0px 18px;
+}
+
+.driver_name_distance:hover{
+  background-color: rgb(187, 185, 185);
+  cursor: pointer;
+}
+
+.driver-list-container{
+  /* border: 2px solid black; */
+  margin-top: 12px;
+}
+
+.driver-list-head{
+  display: flex;
+  justify-content: center;
 }

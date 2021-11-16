@@ -2,6 +2,7 @@ import React from 'react'
 import '../Driver-profile/Dprofile.css'
 import driver from '../Driver-profile/profile.png'
 import Navbar from '../navbar/Navbar'
+import { DataNavigation } from 'react-data-navigation';
 export default function Dprofile() {
 
 
@@ -11,6 +12,7 @@ export default function Dprofile() {
     return (
         <>
         <Navbar/>
+        <h1>{DataNavigation.getData('driverName')}</h1>
       
       <div className="wrapper">
       
@@ -50,11 +52,11 @@ export default function Dprofile() {
                              </ul>
                              <ul className='detail'>
                                <li className='detail-row'>Name</li>
-                               <li className='detail-row'>Joginger Sharma</li> 
+                               <li className='detail-row'>{DataNavigation.getData('driverName')}</li> 
                              </ul>
                              <ul className='detail'>
                                <li  className='detail-row'>Email</li>
-                               <li className='detail-row'>JogingerSharma23@gmail.com</li> 
+                               <li className='detail-row'>{DataNavigation.getData('driverName')}xxxx@gmail.com</li> 
                              </ul>
                              
                              <ul className='detail'>
