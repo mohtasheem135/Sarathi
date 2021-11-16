@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Libre+Baskerville&family=Lobster&display=swap');
+
+
+
+/* Navbar */
+*{
+    font-family: 'Poppins';
+
+}
+.navbar-1{
+    font-family: 'Poppins';
+    border: 4px solid rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: 2px 1px 5px #fff;
+    /* background-color: darkcyan; */
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    /* position: fixed;
+    top: 0; */
+    /* background-image: linear-gradient(rgb(2, 61, 20), rgb(95, 78, 0)); */
+   
+    
+}
+
+.img-1{
+    width: 12%;
+    margin-left: 22px;
+    text-shadow: 2px 2px 12px black;
+}
+
+.img-link{
+    font-family: 'Poppins';
+    position: absolute;
+    text-decoration: none;
+    
+    
+
+}
+
+.heading-2{
+
+    margin-left: 9%;
+    color: rgb(0, 0, 0);
+   
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Poppins';
+   
+}
+
+.nav-1{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 6pc;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list{
+    /* border: 2px solid green; */
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.nav-text{
+    font-family:'Poppins';
+   
+    list-style: none;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.nav-link-text{
+  
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    
+}
+
+.nav-link-text:hover{
+    font-weight: 540;
+    color: rgb(207, 207, 207);
+    text-shadow: 4px 3px 6px rgb(8, 8, 8);
+}
+
+.user-container{
+    /* border: 2px solid black; */
+    border: none;
+    border-left: 1px solid rgb(255, 255, 255);
+    width: 22%;
+    height: 5pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.user-link{
+    /* margin-left: 12%; */
+    margin-top: 10px;
+    /* border: 2px solid rgb(255, 8, 8); */
+}
+
+.user-1{
+    width: 35%;
+    /* border: 2px solid black; */
+    margin-left: 30%;
+}
+
+.profile-list{
+    display: inline;
+    /* border: 2px solid orange; */
+    margin-left: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.profile-text{
+
+    border: rgb(236, 236, 236) 1px solid;
+    padding-right: 10px;
+    font-size: large;
+    font-family: 'Poppins';
+    cursor: pointer;
+    list-style: none;
+    font-size: 20px;
+    /* border: 2px solid black; */
+    color: white;
+    margin-left: 12px;
+    text-align: right;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.drop-container{
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* background-color: white; */
+    margin-top: 6pc;
+ 
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    margin-right: 9%;
+    margin-top: 1.5%;
+    height: 5pc;
+    /* visibility: hidden; */
+    
+}
+
+.drop-list{
+    /* border: 2px solid red; */
+    list-style: none;
+    visibility: hidden;
+    height: 0pc;
+    margin-top: 55%;
+    background-color: #fff;
+   
+    box-shadow: 0 0 12px black;
+    
+}
+
+.drop-text{
+    
+    /* border: 2px solid black; */
+    font-size: 14px;
+    border: solid 5px rgb(219, 215, 215);
+    border-radius: 30px;
+    padding-top: 10px;
+    margin-top: 10%;
+}
+
+.drop-text-link{
+    text-decoration: none;
+    text-align: right;
+    color: black;
+}
+
+.drop-text-link:hover{
+    text-decoration: none;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+.drop-text:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* .profile-list :hover .drop-list{
+    visibility: visible;
+    color: red;
+} */
+
+.drop-container:hover .drop-list{
+    visibility: visible;
+    height: 10pc;
+    
+    transition: all 0.5s ease-out;
+   
+}
+
+.drop-container:hover .drop-text{
+    
+    transition: all 0.5s ease-out;
+    padding: 10px 32px;
+}

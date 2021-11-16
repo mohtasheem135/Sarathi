@@ -1,0 +1,24 @@
+/* * {
+    margin: 0;
+    padding: 0;
+  }
+
+.component{
+    border: #1877f2 solid 3px;
+    padding-top: 0%;
+    position: relative;
+    
+} */
+.homepage{
+  
+}
+.homepage > .button{
+
+background-color: #1877f2;
+border:1px solid #1877f2;
+color:  #fff;
+padding:0.5rem;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 50pc;
+}
