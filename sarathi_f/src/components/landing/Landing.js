@@ -155,21 +155,21 @@ const Landing = () => {
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img" src={img3}/ >
+            <img class="phone-img" src={img3} />
             <div class="phone-text">
                 <h2 class="phone-text-1">Transparent pricing</h2>
                 <p class="phone-text-2">Convenient mechanism, with online and cash payment mode.</p>
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img contact-img" src={img4} / >
+            <img class="phone-img contact-img" src={img4} />
             <div class="phone-text">
                 <h2 class="phone-text-1">Emergency Contact</h2>
                 <p class="phone-text-2">In case of any emergency, book the nearby ambulance very easily. </p>
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img" src={img5} / >
+            <img class="phone-img" src={img5} />
             <div class="phone-text">
                 <h2 class="phone-text-1">Tips & Information</h2>
                 <p class="phone-text-2">All the tips and health related information in case of any emergency situation</p>
