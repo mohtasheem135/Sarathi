@@ -4,6 +4,12 @@ import img from "../landing/images/Ambulance.png"
 import Login from '../login/Login'
 import Register from '../register/Register'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import img1 from "../images/smartphone-2.png"
+import img2 from "../images/Book.png"
+import img3 from "../images/safe.png"
+import img4 from "../images/contact-1.png"
+import img5 from "../images/idea.png"
+import img6 from "../images/communication-2.png"
 
 
 
@@ -134,46 +140,46 @@ const Landing = () => {
         <div class="feature feature-1">
         
 
-            <img class="phone-img" src="./images/smartphone-2.png" />
+            <img class="phone-img" src={img1} />
             <div class="phone-text">
                 <h2 class="phone-text-1">Very Convenient</h2>
-                <p class="phone-text-2">One touch access to all the <br/> doctors...</p>
+                <p class="phone-text-2">One touch access to all the nearby available ambulances. </p>
             </div>
 
         </div>
         <div class="feature feature-1">
-            <img class="phone-img" src="./images/Book.png"/>
+            <img class="phone-img" src={img2}/>
             <div class="phone-text">
-                <h2 class="phone-text-1">Appointment</h2>
-                <p class="phone-text-2">Shedule the Appointment at your own convenience.</p>
+                <h2 class="phone-text-1">Advance Booking</h2>
+                <p class="phone-text-2">Book ambulances in advance for hassle-free hospital visits.</p>
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img" src="./images/safe.png"/ >
+            <img class="phone-img" src={img3}/ >
             <div class="phone-text">
                 <h2 class="phone-text-1">Transparent pricing</h2>
                 <p class="phone-text-2">Convenient mechanism, with online and cash payment mode.</p>
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img contact-img" src="./images/contact-1.png"/ >
+            <img class="phone-img contact-img" src={img4} / >
             <div class="phone-text">
                 <h2 class="phone-text-1">Emergency Contact</h2>
-                <p class="phone-text-2">In case of any Emergency expert advice team will be available</p>
+                <p class="phone-text-2">In case of any emergency, book the nearby ambulance very easily. </p>
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img" src="./images/idea.png"/ >
+            <img class="phone-img" src={img5} / >
             <div class="phone-text">
                 <h2 class="phone-text-1">Tips & Information</h2>
                 <p class="phone-text-2">All the tips and health related information in case of any emergency situation</p>
             </div>
         </div>
         <div class="feature feature-1">
-            <img class="phone-img" src="./images/communication-2.png" />
+            <img class="phone-img" src={img6} />
             <div class="phone-text">
                 <h2 class="phone-text-1">Easy communication</h2>
-                <p class="phone-text-2">Seamless communication with doctors.</p>
+                <p class="phone-text-2">Communicate with the ambulance driver easily.</p>
             </div>
         </div>
     </div>
