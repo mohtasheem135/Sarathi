@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Driver-profile/Dprofile.css'
 import driver from '../Driver-profile/profile.png'
 import Navbar from '../navbar/Navbar'
@@ -12,7 +12,8 @@ export default function Dprofile() {
     return (
         <>
         <Navbar/>
-        <h1>{DataNavigation.getData('driverName')}</h1>
+        {/* <h1>{DataNavigation.getData('driverName')}</h1> */}
+        {/* <h1>{localStorage.getItem('name')}</h1> */}
       
       <div className="wrapper">
       
@@ -27,7 +28,7 @@ export default function Dprofile() {
                
                     <h2 className='topper'>SUPER SARTHI</h2>
                     <div className='name-rate'>
-                             <h3>Joginger Sharma</h3>
+                             <h3>{localStorage.getItem('driver_name')}</h3>
                                  <div className='rate'>
                                  
                                   <i class="fas fa-star" ></i>
@@ -52,11 +53,11 @@ export default function Dprofile() {
                              </ul>
                              <ul className='detail'>
                                <li className='detail-row'>Name</li>
-                               <li className='detail-row'>{DataNavigation.getData('driverName')}</li> 
+                               <li className='detail-row'>{localStorage.getItem('driver_name')}</li> 
                              </ul>
                              <ul className='detail'>
                                <li  className='detail-row'>Email</li>
-                               <li className='detail-row'>{DataNavigation.getData('driverName')}xxxx@gmail.com</li> 
+                               <li className='detail-row'>{localStorage.getItem('driver_name')}xxxx@gmail.com</li> 
                              </ul>
                              
                              <ul className='detail'>
@@ -80,10 +81,6 @@ export default function Dprofile() {
                     
                       <ul className='detail-center'>
                         <h3>Last few trips...</h3>
-                     
-     
-
- 
                                <li className='travel-hover color-1'>KOLKATA ---  PATNA</li> 
                                <li className='travel-hover color-1'>KOLKATA ---  PATNA</li> 
                                <li className='travel-hover color-1'>DELHI ---  KANPUR</li> 

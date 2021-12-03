@@ -565,3 +565,10 @@ border: solid 4px seagreen;
   display: flex;
   justify-content: center;
 }
+
+.continue-btn{
+  margin-top: 24px;
+  margin-left: 30%;
+  padding: 8px 12px;
+  font-size: 18px;
+}

@@ -24,7 +24,7 @@ var random_name = require('random-indian-name');
 
 
 function Map() {
-
+  
 
   const [display, setDisplay] = useState(true)
 
@@ -499,26 +499,34 @@ function Map() {
       console.log(e.target.value)
       DataNavigation.setData('driverName', e.target.value)
       // render(<Dprofile/>)
+      localStorage.setItem('driver_name', e.target.value)
+      
       setDisplay(false)
+      // e.target.style.display="none"
       history.push("/dprofile")
+      window.location.reload()
+    }
+
+    function dd(e){
+      e.target.style.visibility="hidden"
     }
 
     function popup_123() {
       // window.location.reload()
-     if(display===true){
+     
       render(
-        <ScrollLock>
-          <div className="container-1">
-            <div className="container-2">
+        
+          <div onClick={dd} className="container-1" style={{visibility: display===false?'hidden' : 'visible'}}>
+            <div  className="container-2">
               
               <h3 className="driver-list-head">Choose the Driver</h3>
               <div className="driver-list-container">
                 
-                <button onClick={getDriver} value={driverName_0} className="driver_name_distance">{driverName_0} :- {DataNavigation.getData('driver_0')} m away</button>
-                <button onClick={getDriver} value={driverName_1} className="driver_name_distance">{driverName_1} :- {DataNavigation.getData('driver_1')} m away</button>
-                <button onClick={getDriver} value={driverName_2} className="driver_name_distance">{driverName_2} :- {DataNavigation.getData('driver_2')} m away</button>
-                <button onClick={getDriver} value={driverName_3} className="driver_name_distance">{driverName_3} :- {DataNavigation.getData('driver_3')} m away</button>
-                <button onClick={getDriver} value={driverName_4} className="driver_name_distance">{driverName_4} :- {DataNavigation.getData('driver_4')} m away</button>
+                <button onClick={getDriver}  value={driverName_0} className="driver_name_distance">{driverName_0} :- {DataNavigation.getData('driver_0')} m away</button>
+                <button onClick={getDriver}  value={driverName_1} className="driver_name_distance">{driverName_1} :- {DataNavigation.getData('driver_1')} m away</button>
+                <button onClick={getDriver}  value={driverName_2} className="driver_name_distance">{driverName_2} :- {DataNavigation.getData('driver_2')} m away</button>
+                <button onClick={getDriver}  value={driverName_3} className="driver_name_distance">{driverName_3} :- {DataNavigation.getData('driver_3')} m away</button>
+                <button onClick={getDriver}  value={driverName_4} className="driver_name_distance">{driverName_4} :- {DataNavigation.getData('driver_4')} m away</button>
               </div>
               <div className="payment-btn-container">
                 {/* <button className="payment-btn-cancel payment-btn-confirm" onClick={profile}  >Choos</button> */}
@@ -528,9 +536,8 @@ function Map() {
 
             </div>
           </div>
-        </ScrollLock>
       )
-     }
+     
     }
     var x;
     if (renders === 0) {
